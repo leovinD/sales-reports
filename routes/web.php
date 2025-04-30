@@ -14,7 +14,3 @@ Route::get('/', function () {
 
 // Route for the dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::resource('sales', SaleController::class);
-Route::resource('sale_categories', SaleCategoryController::class);
-Route::resource('products', ProductController::class);
-Route::resource('regions', RegionController::class);
